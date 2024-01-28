@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Music player</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body>
+      
+        <div class="container">
+          <div class="box">
+           <a href="#" class="lk"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a><br><br>
+           <a href="#" class="lk"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</a><br><br>
+          </div>
+          <div class="box1">
+            <a href="#" class="lk1"><i class="fa-solid fa-layer-group"></i>&nbsp;Your Library</a>
+            <a href="#" class="plus"><i class="fa-solid fa-plus fa-lg" style="color: #e4e7ec;"></i></a>
+            <a href="#" class="arrow"><i class="fa-solid fa-arrow-right fa-lg" style="color: #dadde2;"></i></a>
+            <div class="box2">
+              <p>Create your First playlist</p>
+              <p class="short">It's easy,we'll help you</p>
+              <button class="btn">Create playlist</button>
+            </div>
+            <div class="box3">
+              <p>Let's find some podcasts to follow</p>
+              <p class="short">We'll keep you updates on new episodes</p>
+              <button class="btn">Browse podcasts</button>
+            </div>
+          </div>
+          <div class="main">
+            
+            <button id="btn" class="btn">Explore premium</button>
+            <a href="#"class="lk2"><i class="fa-regular fa-circle-down fa-lg" style="color: #f1f2f3;"></i>&nbsp;Install App</a>
+            <a href="#" class="lk3"><i class="fa-regular fa-bell fa-lg" style="color: #ffffff;"></i></a>
+            <a href="#" class="lk4"><i class="fa-regular fa-user fa-lg" style="color: #ffffff;"></i></a>
+            <h1>Choose your Playlist..</h1>
+            <div class="song1">
+             <img class="img1" src="3img.jpg" width="230px" height="200px">
+             <div class="des">
+              <h3>Kannazhaga (The Kiss of Love)</h3>
+              <p>Song by Anirudh Ravichander from 3</p>
+             </div>
+             <div class="play" id="play-button">
+              <i  id="icon" class="fa-solid fa-play fa-lg" style="color: #000000;"></i>
+             </div>
+            </div>
+            <div class="song2">
+              <img class="img1" src="paiya.jpg" width="230px" height="200px">
+              <div class="des">
+               <h3>Suthudhe Suthudhe</h3>
+               <p class="py">Song by Karthik and Sunitha Sarathy form Paiya</p>
+              </div>
+              <div class="play" id="play-button">
+               <i  id="icon" class="fa-solid fa-play fa-lg" style="color: #000000;"></i>
+              </div>
+             </div>
+             <div class="song3">
+              <img class="img1" src="pranaya-vilasam.jpg" width="230px" height="200px">
+              <div class="des">
+               <h3>Naruchiriyude Minnayam</h3>
+               <p>Song by Midhun Jayaraj from Pranaya vilasam</p>
+              </div>
+              <div class="play" id="play-button">
+               <i  id="icon" class="fa-solid fa-play fa-lg" style="color: #000000;"></i>
+              </div>
+             </div>
+            <div class="songs" id="songs">
+              <div class="slider-container">
+                <input class="song-slider" type="range" min="0" max="100" step="0.1" value="0">
+                <input class="volume" type="range" min="0" max="1" step="0.01" value="1">
+              </div>
+              <div class="song-controls">
+                <i id="next" class="fa-solid fa-forward-step fa-lg" style="color: #ffffff;"></i>
+                <i id="pre" class="fa-solid fa-forward-step fa-rotate-180 fa-lg" style="color: #ffffff;"></i>
+                <i id="volume" class="fa-solid fa-volume-high fa-lg" style="color: #ffffff;"></i>
+            </div>
+          </div>
+          </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
